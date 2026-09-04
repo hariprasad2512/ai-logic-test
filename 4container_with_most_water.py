@@ -14,6 +14,9 @@
 
 # ●       Explain your approach and complexity.
 
+# Two Pointer approach
+# Time Complexity - O(N)
+# Space Complexity - O(1)
 def container_with_most_water(height):
     left = 0
     right = len(height) - 1
