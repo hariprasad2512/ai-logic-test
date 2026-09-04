@@ -27,7 +27,7 @@ def majority_element(nums):
 # Using O(1) Space Complexity as Expected
 # using O(n) time complexity
 def majority_element_optimal(nums):
-    majority = None
+    majority = None 
     count = 0
     for num in nums:
         if count == 0:
@@ -37,5 +37,7 @@ def majority_element_optimal(nums):
         else:
             count = -1
     return majority
+
+
     
 print(majority_element_optimal([2,2,1,1,1,2,2]))
