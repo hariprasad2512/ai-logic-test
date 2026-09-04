@@ -9,6 +9,10 @@
 # Output:
 
 # 2
+
+# Using hashmpa 
+# Space Complexity O(n) 
+# time complexity O(n)
 def majority_element(nums):
     freq_map = {}
     for num in nums:
@@ -19,5 +23,19 @@ def majority_element(nums):
             return number
     
     return - 1
+
+# Using O(1) Space Complexity as Expected
+# using O(n) time complexity
+def majority_element_optimal(nums):
+    majority = None
+    count = 0
+    for num in nums:
+        if count == 0:
+            majority = num
+        if num == majority:
+            count += 1
+        else:
+            count = -1
+    return majority
     
-print(majority_element([2,2,1,1,1,2,2]))
+print(majority_element_optimal([2,2,1,1,1,2,2]))

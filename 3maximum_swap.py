@@ -18,5 +18,3 @@
 
 def maximum_swap(num):
     pass
-
- 
